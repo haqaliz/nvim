@@ -4,6 +4,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 
 vim.opt.errorbells = false
+vim.opt.mouse = 'a'
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -19,8 +20,11 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
+
+vim.opt.list = true
+vim.opt.listchars="eol:$,tab:>-,trail:~,extends:>,precedes:<"
 
 vim.opt.termguicolors = true
 

@@ -9,7 +9,9 @@ return require('packer').startup(function(use)
 	use({
 		'nvim-lualine/lualine.nvim',
 	})
-    
+    use("airblade/vim-gitgutter")
+    use("cohama/lexima.vim")
+
     -- Colorscheme section
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
@@ -21,4 +23,6 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     })
+
+    use("ThePrimeagen/vim-be-good")
 end)
