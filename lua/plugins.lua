@@ -4,25 +4,31 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	use("wbthomason/packer.nvim")
+  use("wbthomason/packer.nvim")
 
-	use({
-		'nvim-lualine/lualine.nvim',
-	})
-    use("airblade/vim-gitgutter")
-    use("cohama/lexima.vim")
+  use("neovim/nvim-lspconfig")
+  use({
+    'nvim-lualine/lualine.nvim',
+  })
+  use("airblade/vim-gitgutter")
+  use("cohama/lexima.vim")
+  use("nvim-treesitter/nvim-treesitter")
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
-    -- Colorscheme section
-    use("gruvbox-community/gruvbox")
-    use("folke/tokyonight.nvim")
-    use({"catppuccin/nvim", as = "catppuccin" })
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
+  -- Colorscheme section
+  use("gruvbox-community/gruvbox")
+  use("folke/tokyonight.nvim")
+  use({"catppuccin/nvim", as = "catppuccin" })
+  use({
+      'rose-pine/neovim',
+      as = 'rose-pine',
+      config = function()
+          vim.cmd('colorscheme rose-pine')
+      end
+  })
 
-    use("ThePrimeagen/vim-be-good")
+  use("ThePrimeagen/vim-be-good")
 end)
