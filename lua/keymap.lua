@@ -26,8 +26,6 @@ local xnoremap = M.xnoremap
 local nmap = M.nmap
 
 -- #definitions --
-vim.g.mapleader = "\\"
-
 nmap("<leader>h", ":noh<CR>")
 
 -- telescope
