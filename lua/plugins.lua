@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
   use("airblade/vim-gitgutter")
   use("cohama/lexima.vim")
   use("nvim-treesitter/nvim-treesitter")
+  use("mattn/webapi-vim")
+  use("mattn/emmet-vim")
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
